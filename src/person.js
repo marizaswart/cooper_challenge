@@ -1,5 +1,4 @@
 function Person(attr) {
-  this.name = attr.name;
   this.gender = attr.gender;
   this.age = attr.age;
 }
