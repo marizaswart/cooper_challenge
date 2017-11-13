@@ -8,16 +8,16 @@ var dataSetMale = [
   {age:'50+', excellent:'>2400m', aboveAverage:'2000-2399m', average:'1600-1999m', belowAverage:'1300-1599m', poor:'<1300m'}
 ];
 var dataSetFemale = [
-  '13-14':{excellent:'>2000m', aboveAverage:'1900-1999m', average:'1600-1899m', belowAverage:'1500-1599m', poor:'<1500m'},
-  '15-16':{excellent:'>2100m', aboveAverage:'2000-2099m', average:'1700-1999m', belowAverage:'1600-1699m', poor:'<1600m'},
-  '17-19':{excellent:'>2300m', aboveAverage:'2100-2299m', average:'1800-2099m', belowAverage:'1700-1799m', poor:'<1700m'},
-  '20-29':{excellent:'>2700m', aboveAverage:'2200-2699m', average:'1800-2199m', belowAverage:'1500-1799m', poor:'<1500m'},
-  '30-39':{excellent:'>2500m', aboveAverage:'2000-2499m', average:'1700-1999m', belowAverage:'1400-1699m', poor:'<1400m'},
-  '40-49':{excellent:'>2300m', aboveAverage:'1900-2299m', average:'1500-1899m', belowAverage:'1200-1499m', poor:'<1200m'},
-  '50+':{excellent:'>2200m', aboveAverage:'1700-2199m', average:'1400-1699m', belowAverage:'1100-1399m', poor:'<1100m'}
-];
+  {'13-14':{'>2000m','1900-1999m', '1600-1899m', '1500-1599m', '<1500m'},
+  '15-16':{'>2100m', '2000-2099m', '1700-1999m', '1600-1699m', '<1600m'},
+  '17-19':{'>2300m', '2100-2299m', '1800-2099m', '1700-1799m', '<1700m'},
+  '20-29':{'>2700m', '2200-2699m', '1800-2199m', '1500-1799m', '<1500m'},
+  '30-39':{'>2500m', '2000-2499m', '1700-1999m', '1400-1699m', '<1400m'},
+  '40-49':{'>2300m','1900-2299m', '1500-1899m', '1200-1499m', '<1200m'},
+  '50+':{'>2200m', '1700-2199m', '1400-1699m', '1100-1399m', '<1100m'}
+}];
 
-function age(age:) {
+function age() {
   var age_selected = function(obj) {
     if(age_selected == 13 || 14) {
       return '13-14';
@@ -39,20 +39,30 @@ function age(age:) {
   };
 }
 
-// function CooperChallenge() {
-//
-// }
-// CooperChallenge.prototype.cooper = function(obj) {
-//   var gender = obj.gender;
-//   var age = obj.age;
-//   var distance = obj.distance;
-//   if(gender == 'dataSetMale') {
-//     var maleCooper =
-//   };
-//   setEndurancelevel();
-// }
-// };
-//
-// function setEndurancelevel() {
-//
-// }
+function CooperChallenge(distance) {
+  if(gender == 'female') {
+    dataSetFemale.find(age, value);
+    for(i = 0; i < dataSetFemale.length; i++)
+    return 'Your index it ' + setMessage;
+  } else if(gender == 'male') {
+    dataSetMale.find(value, distance);
+    for(i = 0; i < dataSetMale.length; i++)
+    return 'Your index it ' + setMessage;
+  } else {
+    return 'You have to select a gender';
+  }
+}
+function setMessage(obj) {
+  obj.dataSetFemale = function(age, distance) {
+  if(age == '13-14' && distance == 0) {
+    return'Excellent';
+  } else if(age == '15-16' && distance == 0) {
+    return 'Above Average';
+  } else if(age == '17-19' && distance == 0) {
+    return 'Above Average';
+  } else if(age == '20-29' && distance == 0) {
+    return 'Above Average';
+  } else if(age == '30-39' && distance == 0) {
+    return 'Above Average';
+  }
+};
